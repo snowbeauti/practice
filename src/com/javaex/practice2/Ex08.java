@@ -27,13 +27,14 @@ public class Ex08 {
 			less = x;
 		} else if(x<=y && x<=z) {
 			less = x; 
+			System.out.println("가장 작은수는 " + less + " 입니다.");
 		} else if (y<=x && y<=z) {
 			less = y;
+			System.out.println("가장 작은수는 " + less + " 입니다.");
 		} else if (z<=x && z<=y) {
 			less = z;
+			System.out.println("가장 작은수는 " + less + " 입니다.");
 		}
-		
-		System.out.print("가장 작은수는 " + less + " 입니다.");
 		
 		sc.close();
 	}

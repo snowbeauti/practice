@@ -9,14 +9,16 @@ public class Ex13 {
 		
 		System.out.println("숫자를 입력해 주세요.");
 		System.out.print("숫자: ");
-		int num;
-		num = sc.nextInt();
+		int x;
+
 		
-		if (num > 0) {
-			double result = (7 * num) + 2;
+		x = sc.nextInt();
+		
+		if (x > 0) {
+			double result = (7 * x) + 2;
 			System.out.print("계산결과는 " + result +"입니다.");
-		} else if (num <= 0) {
-			double result = (num * num * num) - (9 * num) + 2;
+		} else if (x <= 0) {
+			double result = Math.pow(x, 3) - (9 * x) + 2;
 			System.out.print("계산결과는 " + result +"입니다.");
 		}
 		

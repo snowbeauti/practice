@@ -24,26 +24,33 @@ public class Ex12 {
 		
 		double result;
 		
-		if (mark == "/") {
+		switch (mark) {
+		case "/": 
 			if(num2 == 0) {
 				System.out.print("계산할 수 없습니다.");
 			} else {
 				result = num1 / num2;
 				System.out.print("결과는: " + result);
 			}
-		} else if(mark == "+") {
+			break;
+		case "+": 
 			result = num1 + num2;
 			System.out.print("결과는: " + result);
-		} else if (mark == "-") {
+			break;
+		case "-":
 			result = num1 - num2;
 			System.out.print("결과는: " + result);
-		}  else if (mark == "*") {
+			break;
+		case "*": 
 			result =num1 * num2;
 			System.out.print("결과는: " + result);
-		} else {System.out.print("계산 할 수 없는 기호입니다.");
+		break;	
+		
+		default:
+		System.out.print("계산 할 수 없는 기호입니다.");
+		break;
 		}
 		
-
 		sc.close();
 	}
 
